@@ -22,8 +22,7 @@ const triggerDef: Trigger<typeof workflowDef.definition> = {
             statement: "{{data.text}} CONTAINS 'test1'",
           },
           {
-            statement: "{{data.channel_type}} == 'private'",
-            // statement: "{{data.channel_type}} == 'im'",
+            statement: "{{data.channel_type}} == 'dm'",
           },
         ],
       },
